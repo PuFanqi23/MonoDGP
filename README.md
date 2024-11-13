@@ -60,3 +60,16 @@ New and better results in this repo:
         <td div align="center">coming soon</td>
     </tr>  
 </table>
+
+Test results submitted to the official KITTI Benchmark:
+
+Car category: 
+<div>
+  <img src="figures/18_72.jpg"/>
+  <img src="figures/18_87.jpg"/>
+</div>
+
+All categories:
+<div>
+  <img src="figures/test_all.png"/>
+</div>
