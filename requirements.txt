@@ -1,0 +1,7 @@
+pyyaml
+scipy
+opencv-python
+numba
+scikit-image
+scikit-learn
+tqdm
