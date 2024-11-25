@@ -112,6 +112,7 @@ All categories:
 ## Installation
 1. Clone this project and create a conda environment:
     ```bash
+    git clone https://github.com/PuFanqi23/MonoDGP.git
     cd MonoDGP
 
     conda create -n monodgp python=3.8
@@ -168,4 +169,4 @@ The best checkpoint will be evaluated as default. You can change it at "tester/c
   bash test.sh configs/monodgp.yaml
   ```
 ## Acknowlegment
-This repo benefits from the excellent [MonoDETR](https://github.com/ZrrSkywalker/MonoDETR).
+This repo benefits from the excellent work [MonoDETR](https://github.com/ZrrSkywalker/MonoDETR).
