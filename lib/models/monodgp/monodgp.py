@@ -34,7 +34,7 @@ class MonoDGP(nn.Module):
         Parameters:
             backbone: torch module of the backbone to be used. See backbone.py
             det2d_transformer: transformer architecture. See det2d_transformer.py
-            det3d_transformer:
+            det3d_transformer: transformer architecture. See det3d_transformer.py
             num_classes: number of object classes
             num_queries: number of object queries, ie detection slot. This is the maximal number of objects
                          DETR can detect in a single image. For KITTI, we recommend 50 queries.
