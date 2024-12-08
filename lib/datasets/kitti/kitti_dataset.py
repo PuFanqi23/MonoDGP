@@ -208,7 +208,7 @@ class KITTI_Dataset(data.Dataset):
                 
                 if calib_temp.cu == calib.cu and calib_temp.cv == calib.cv and calib_temp.fu == calib.fu and calib_temp.fv == calib.fv:
                     img_temp = self.get_image(random_index)
-                    img_size_temp = np.array(img.size)
+                    img_size_temp = np.array(img_temp.size)
                     dst_W_temp, dst_H_temp = img_size_temp
                     if dst_W_temp == dst_W and dst_H_temp == dst_H:
                         objects_1 = self.get_label(index)
