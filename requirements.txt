@@ -5,3 +5,4 @@ numba
 scikit-image
 scikit-learn
 tqdm
+thop
