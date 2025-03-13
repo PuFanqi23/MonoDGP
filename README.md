@@ -1,7 +1,11 @@
 # MonoDGP: Monocular 3D Object Detection with Decoupled-Query and Geometry-Error Priors
 
+
+This repository hosts the official implementation of [MonoDGP: Monocular 3D Object Detection with Decoupled-Query and Geometry-Error Priors](https://arxiv.org/abs/2410.19590) based on the excellent work [MonoDETR](https://github.com/ZrrSkywalker/MonoDETR). In this work, we propose a novel transformer-based monocular method called MonoDGP, which adopts geometry errors to correct the projection formula. We also introduce a 2D visual decoder for query initialization and a region segmentation head for feature enhancement.
+
+
 <div align="center">
-  <img src="figures/overall.jpg" width="800" height="auto"/>
+  <img src="figures/overall.png" width="800" height="auto"/>
 </div>
 
 <div align="center">
@@ -71,7 +75,7 @@ New and better results in this repo:
 </table>
 
 
-We also provide a new ckpt pretrained on the trainval set, you can directly utilize this ckpt and submit test results to the KITTI 3D object detection benchmark to verify our method.
+We also provide a new ckpt pretrained on the trainval set, you can directly utilize this ckpt and submit test results to the [KITTI 3D object detection benchmark](https://www.cvlibs.net/datasets/kitti/user_login.php) (You need to register an account) to verify our method.
 
 <table>
     <tr>
@@ -99,13 +103,13 @@ Test results submitted to the official KITTI Benchmark:
 
 Car category: 
 <div>
-  <img src="figures/18_72.jpg"/>
-  <img src="figures/18_87.jpg"/>
+  <img src="figures/18_72.jpg" style="max-width: 40%; height: auto;"/>
+  <img src="figures/18_87.jpg" style="max-width: 40%; height: auto;"/>
 </div>
 
 All categories:
 <div>
-  <img src="figures/test_all.png"/>
+  <img src="figures/test_all.png" style="max-width: 30%; height: auto;"/>
 </div>
 
 
@@ -134,13 +138,8 @@ All categories:
     
     cd ../../../..
     ```
-    
-4. Make dictionary for saving training losses:
-    ```bash
-    mkdir logs
-    ```
  
-5. Download [KITTI](http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d) datasets and prepare the directory structure as:
+4. Download [KITTI](http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d) datasets and prepare the directory structure as:
     ```bash
     │MonoDGP/
     ├──...
@@ -168,5 +167,22 @@ The best checkpoint will be evaluated as default. You can change it at "tester/c
   ```bash
   bash test.sh configs/monodgp.yaml
   ```
+You can test the inference time on your own device:
+  ```bash
+  python tools/test_runtime.py
+  ```
+## Citation
+
+If you find our work useful in your research, please consider giving us a star and citing:
+
+```latex
+@article{pu2024monodgp,
+  title={MonoDGP: Monocular 3D Object Detection with Decoupled-Query and Geometry-Error Priors},
+  author={Pu, Fanqi and Wang, Yifan and Deng, Jiru and Yang, Wenming},
+  journal={arXiv preprint arXiv:2410.19590},
+  year={2024}
+}
+```
+
 ## Acknowlegment
 This repo benefits from the excellent work [MonoDETR](https://github.com/ZrrSkywalker/MonoDETR).
