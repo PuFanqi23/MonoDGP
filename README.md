@@ -103,8 +103,8 @@ Test results submitted to the official KITTI Benchmark:
 
 Car category: 
 <div>
-  <img src="figures/18_72.jpg" style="max-width: 40%; height: auto;"/>
-  <img src="figures/18_87.jpg" style="max-width: 40%; height: auto;"/>
+  <img src="figures/18_72.jpg" style="max-width: 30%; height: auto;"/>
+  <img src="figures/18_87.jpg" style="max-width: 30%; height: auto;"/>
 </div>
 
 All categories:
