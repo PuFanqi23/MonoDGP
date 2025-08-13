@@ -397,7 +397,8 @@ class KITTI_Dataset(data.Dataset):
                         [x1, _, x2, _] = object.box2d
                         object.box2d[0],  object.box2d[2] = img_size[0] - x2, img_size[0] - x1
                         object.ry = np.pi - object.ry
-                        object.pos[0] *= -1
+                        if self.aug_calib:
+                            object.pos[0] *= -1
                         if object.ry > np.pi:  object.ry -= 2 * np.pi
                         if object.ry < -np.pi: object.ry += 2 * np.pi
                 object_num_temp = len(objects) if len(objects) < (self.max_objs - object_num) else (self.max_objs - object_num)
