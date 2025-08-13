@@ -175,11 +175,12 @@ You can test the inference time on your own device:
 If you find our work useful in your research, please consider giving us a star and citing:
 
 ```latex
-@article{pu2024monodgp,
-  title={MonoDGP: Monocular 3D Object Detection with Decoupled-Query and Geometry-Error Priors},
+@inproceedings{pu2025monodgp,
+  title={Monodgp: Monocular 3D object detection with decoupled-query and geometry-error priors},
   author={Pu, Fanqi and Wang, Yifan and Deng, Jiru and Yang, Wenming},
-  journal={arXiv preprint arXiv:2410.19590},
-  year={2024}
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={6520--6530},
+  year={2025}
 }
 ```
 
